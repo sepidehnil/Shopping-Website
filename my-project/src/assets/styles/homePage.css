@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .homepage-container {
+    @apply py-4 px-6 w-full lg:m-auto lg:w-3/4;
+  }
+  .first-section {
+    @apply flex items-center text-[#8e8e8e];
+  }
+  .second-section {
+    @apply py-6 flex gap-6 lg:flex-col;
+  }
+  .second-section-card1 {
+    @apply flex-1 bg-[#27282f] p-4 rounded-xl xl:w-[25rem] w-[18rem];
+  }
+  .card1-img {
+    @apply rounded-xl w-full bg-contain h-full lg:h-[250px];
+  }
+  .card1-title {
+    @apply flex gap-2 text-white items-center py-4;
+  }
+  .card1-btn {
+    @apply flex cursor-pointer gap-6 mt-[50px];
+  }
+  .follow-btn {
+    @apply bg-[#1c80eb] text-white py-1 rounded-full text-sm w-2/4 hover:bg-[#1868c3a8];
+  }
+  .chat-btn {
+    @apply bg-transparent border-2 border-[#0a5eb8] text-[#0a5eb8] py-1 rounded-full text-sm w-2/4 hover:bg-[#1868c32b];
+  }
+  .second-section-card2 {
+    @apply flex text-white text-sm bg-[#27282f] px-4 py-4 rounded-xl items-center flex-1 xl:flex-col xl:items-start xl:gap-5 xl:justify-center lg:py-6;
+  }
+  .card2-detailswrap {
+    @apply flex flex-col gap-12 grow xl:gap-5 xl:grow-0;
+  }
+  .card2-detailswrap2 {
+    @apply flex flex-col gap-12 xl:gap-5;
+  }
+  .card2-details {
+    @apply mr-2 text-[#8e8e8e];
+  }
+  .card3-container {
+    @apply flex justify-center items-center text-white bg-[#15984a] p-2 rounded-xl flex-col gap-2 text-center text-[12px] xl:grow;
+  }
+  .card4-container {
+    @apply flex text-[#8e8e8e] bg-[#27282f] px-4 rounded-xl items-center w-full justify-between xl:px-2 xl:text-sm;
+  }
+  .border {
+    @apply border-[#5e5e5f] border-r-2 h-11;
+  }
+  .card5-container {
+    @apply flex flex-1 lg:flex-wrap text-white text-center items-center border-[#5e5e5f] border-b-2 justify-evenly text-sm;
+  }
+  .categories {
+    @apply cursor-pointer py-3 px-8 -mb-[1px] transition-all duration-1000 ease-in-out;
+  }
+}

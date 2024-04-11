@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-container {
+    @apply flex bg-[#0c0c17] items-center py-2 px-6 border-b-2 border-[#2c2d31] sticky top-0 z-20 md:flex-wrap;
+  }
+  .header-title1 {
+    @apply text-lg text-white font-semibold;
+  }
+  .header-title2 {
+    @apply text-xl font-semibold italic text-[#1e4789];
+  }
+  .search-container {
+    @apply md:order-10 md:w-full md:mt-4;
+  }
+  .search-wrapper {
+    @apply bg-[#35363a] px-4 py-2 gap-2 rounded-[2rem] mr-4 text-sm flex items-center;
+  }
+  .search-input {
+    @apply outline-none bg-transparent w-[300px] lg:w-[150px] md:flex-1;
+  }
+  .currency-container {
+    @apply flex bg-[#292e38] rounded-[2rem] justify-center items-center px-6 py-2 gap-2 text-sm lg:px-4;
+  }
+  .top-icons {
+    @apply flex gap-4 px-5 border-r-2 border-[#2c2d31] md:hidden;
+  }
+  .icons {
+    @apply flex w-10 h-10 bg-[#36383b] rounded-full items-center justify-center;
+  }
+  .profile {
+    @apply flex justify-center items-center lg:hidden;
+  }
+}

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-structure {
+    @apply flex flex-1;
+  }
+  .card-container {
+    @apply bg-[#27282f] text-white relative rounded-xl w-[200px] flex-1;
+  }
+  .card-rate {
+    @apply absolute flex left-2 top-2 gap-1 text-[12px] bg-[#2d2c34] px-2 rounded-full;
+  }
+  .image-container {
+    @apply flex h-[180px];
+  }
+  .card-description-sec1 {
+    @apply flex justify-between font-medium;
+  }
+  .card-description-sec2 {
+    @apply flex justify-between items-center gap-2;
+  }
+  .btn {
+    @apply bg-[#1867c3] hover:bg-[#1868c3a8] text-sm px-2 rounded-full cursor-pointer;
+  }
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-container {
+    @apply py-2 border-[#2c2d31] border-r-2 flex flex-col sticky top-[100px] pr-12 w-[200px] md:w-[150px];
+  }
+  .checkbox {
+    @apply flex items-center text-white gap-2 text-sm;
+  }
+  .subcategories-title {
+    @apply text-white font-medium py-2;
+  }
+}
